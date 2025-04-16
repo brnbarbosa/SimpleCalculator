@@ -12,6 +12,7 @@ This project is a basic command-line calculator written in Python. It currently 
     *   Addition (`sum_op`)
     *   Subtraction (`sub_op`)
     *   Multiplication (`mult_op`)
+    *   Division (`div_op`)
 *   Basic error handling for invalid number input.
 
 *(Note: The main execution loop currently only handles the input of the first number and doesn't yet incorporate selecting an operation or inputting a second number to use the defined `sum_op`, `sub_op`, or `mult_op` functions fully.)*
