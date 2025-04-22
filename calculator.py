@@ -7,7 +7,8 @@ def calculator() -> None:
 
     if calculation_result != None:
         print("Result: " + str(calculation_result))
-    
+
+# Get user input for operands
 def get_float_input(prompt : str) -> float:
     while True:
         try:
@@ -16,8 +17,9 @@ def get_float_input(prompt : str) -> float:
 
             return operand
         except ValueError:
-            print('Invalid Input')
+            print('Error: Invalid Input')
 
+# Get user input for operator
 def get_operator(prompt : str) -> str:
     while True:
         try:
@@ -27,7 +29,7 @@ def get_operator(prompt : str) -> str:
                 if operator == item:
                     return operator
         except ValueError:
-            print("Invalid input.")
+            print("Error: Invalid input.")
 
 def result(first_operand : float, second_operand : float, operator : str) -> float:
     calculation_result = None
